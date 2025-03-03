@@ -4,6 +4,7 @@ import React from "react";
 import FetchData from "../hooks/useEffect/FetchData";
 import Counter from "../hooks/useEffect/Counter";
 import ChangeBg from "../hooks/useLayoutEffect/ChangeBg";
+import IndianGov from "../hooks/useContext/PropsDrilling/IndianGov";
 
 const App = () => {
   return (
@@ -17,7 +18,10 @@ const App = () => {
       {/* <Counter /> */}
 
       {/* useLayoutEffect Hook */}
-      <ChangeBg />
+      {/* <ChangeBg /> */}
+
+      {/* PropsDrilling */}
+      <IndianGov />
     </div>
   );
 };
