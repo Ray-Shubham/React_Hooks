@@ -1,19 +1,17 @@
 import React, { useEffect } from 'react'
-import { useState } from 'react';
 
 const FetchData = () => {
-    const [counter, setCounter] = useState(0);
-
-    useEffect(() => {
-        console.log("UseEffect Running....");
-    }, [])
-    
+  useEffect(() => {
+    const fetchDataFromAPI = async () => {
+      const api = await fetch('https://jsonplaceholder.typicode.com/users');
+      const response = await api.json();
+      console.log(response);
+    };
+    fetchDataFromAPI();
+  }, [])
+  
   return (
-    <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={() => setCounter(counter + 1)}>Increment</button>
-      <button onClick={() => setCounter(counter > 0 ? counter - 1 : 0)}>Decrement</button>
-    </div>
+    <div>FetchData</div>
   )
 }
 
