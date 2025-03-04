@@ -1,4 +1,5 @@
 import React from "react";
+import Index from "../hooks/useTransition";
 // import Counter from '../hooks/useState/Counter'
 // import ShoppingCart from '../hooks/useState/ShoppingCart'
 // import FetchData from "../hooks/useEffect/FetchData";
@@ -9,7 +10,7 @@ import React from "react";
 // import Cart from "../hooks/useMemo/Cart";
 // import MemoExample from "../hooks/useMemo/MemoExample";
 // import ProductSearch from "../hooks/useMemo/ProductSearch";
-import Index from "../hooks/useCallback";
+// import Index from "../hooks/useCallback";
 
 const App = () => {
   return (
@@ -37,6 +38,9 @@ const App = () => {
       {/* <ProductSearch /> */}
 
       {/* useCallback Hook */}
+      {/* <Index /> */}
+
+      {/* useTransition Hook */}
       <Index />
     </div>
   );
