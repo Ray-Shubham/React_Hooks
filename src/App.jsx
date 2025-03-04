@@ -6,8 +6,10 @@ import React from "react";
 // import ChangeBg from "../hooks/useLayoutEffect/ChangeBg";
 // import IndianGov from "../hooks/useContext/PropsDrilling/IndianGov";
 // import Reducer from "../hooks/useReducer/Reducer";
-import Cart from "../hooks/useMemo/Cart";
-import MemoExample from "../hooks/useMemo/MemoExample";
+// import Cart from "../hooks/useMemo/Cart";
+// import MemoExample from "../hooks/useMemo/MemoExample";
+// import ProductSearch from "../hooks/useMemo/ProductSearch";
+import Index from "../hooks/useCallback";
 
 const App = () => {
   return (
@@ -30,8 +32,12 @@ const App = () => {
       {/* <Reducer /> */}
 
       {/* useMemo Hook */}
-      <Cart />
-      <MemoExample />
+      {/* <Cart /> */}
+      {/* <MemoExample /> */}
+      {/* <ProductSearch /> */}
+
+      {/* useCallback Hook */}
+      <Index />
     </div>
   );
 };
